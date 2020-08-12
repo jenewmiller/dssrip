@@ -26,10 +26,10 @@ tsc.to.xts <- function(tsc, colnamesSource="parameter", offsetForType=FALSE){
   if(offsetForType){
     if(str_starts(metadata[["type"]], fixed("PER-", ignore_case=TRUE))){
       # period average or period cumulative data, offset by interval
-      offset = -as.integer(metdata[["interval"]])
+      offset = -as.numeric(metdata[["interval"]])
     }
   }
-  granularity = as.integer(metadata[["timeGranularitySeconds"]])
+  granularity = as.numeric(metadata[["timeGranularitySeconds"]])
   if(is.na(granularity)){
     # minutes by default
     granularity = 60

@@ -1,6 +1,6 @@
 Package: dssrip
 Title: DSS R Interface Project
-Version: 0.3
+Version: 0.3.1
 Date: 2020-06-26
 Architecture: i386, x86_64
 Author: Evan A. Heisman, with contributions from Cameron Bracken
